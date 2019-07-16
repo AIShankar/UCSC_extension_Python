@@ -1,0 +1,251 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww51000\viewh25780\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Python 3.5.3 (v3.5.3:1880cb95a742, Jan 16 2017, 08:49:46) \
+[GCC 4.2.1 (Apple Inc. build 5666) (dot 3)] on darwin\
+Type "copyright", "credits" or "license()" for more information.\
+>>> WARNING: The version of Tcl/Tk (8.5.9) in use may be unstable.\
+Visit http://www.python.org/download/mac/tcltk/ for current information.\
+\
+>>> print ("HomeWork #1 Output")\
+HomeWork #1 Output\
+>>> enter_dream_job = raw_input("What is your dream job?")\
+Traceback (most recent call last):\
+  File "<pyshell#2>", line 1, in <module>\
+    enter_dream_job = raw_input("What is your dream job?")\
+NameError: name 'raw_input' is not defined\
+>>> enter_dream_job = input("What is your dream job?")\
+What is your dream job?home maker\
+>>> print\
+<built-in function print>\
+>>> print enter_dream_job\
+SyntaxError: Missing parentheses in call to 'print'\
+>>> enter_dream_job = input("What is your dream job?")\
+print enter_dream_job\
+SyntaxError: multiple statements found while compiling a single statement\
+>>> enter_dream_job\
+'home maker'\
+>>> hourly_wage = input("Enter the hourly wage you wish to earn:")\
+Enter the hourly wage you wish to earn:100\
+>>> hourly_wage\
+'100'\
+>>> \
+>>> hourly_wage = input("Enter the hourly wage you wish to earn:")\
+Enter the hourly wage you wish to earn:100.50\
+>>> hpurly_wage\
+Traceback (most recent call last):\
+  File "<pyshell#12>", line 1, in <module>\
+    hpurly_wage\
+NameError: name 'hpurly_wage' is not defined\
+>>> hourly_wage\
+'100.50'\
+>>> annual_wage = float(hourly _wage) * 40 * 52\
+SyntaxError: invalid syntax\
+>>> annual_wage = float(hourly_wage) * 40 * 52\
+>>> annual_wage\
+209040.0\
+>>> retirement_savings = input("How much money do you need for retirement?")\
+How much money do you need for retirement?2000000\
+>>> retirement_savings\
+'2000000'\
+>>> retirement_savings = float(input("How much money do you need for retirement?"))\
+How much money do you need for retirement?5000000\
+>>> annual_savings = annual_wage / 2\
+working_years = retirement_savings / annual_savings\
+SyntaxError: multiple statements found while compiling a single statement\
+>>> annual_savings = annual_wage / 2\
+>>> working_years = retirement_savings / annual_savings\
+>>> annual_savings\
+104520.0\
+>>> working_years\
+47.83773440489858\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?baker\
+Enter the hourly wage you wish to earn:300000\
+How much money do you need for retirement?5000000\
+Assuming you are able to save 50% of your annual wage,  624000000.0\
+You need to work for,  0.016025641025641024  years\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?baker\
+Enter the hourly wage you wish to earn:200\
+How much money do you need for retirement?5000000\
+Assuming you are able to save 50% of your annual wage,  416000.0\
+You need to work for,  24.03846153846154  years\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?home maker\
+Enter the hourly wage you wish to earn:0\
+How much money do you need for retirement?dont know\
+Traceback (most recent call last):\
+  File "/Users/akilashankar/Documents/Homework_1.1.py", line 18, in <module>\
+    retirement_savings = float(input("How much money do you need for retirement?"))\
+ValueError: could not convert string to float: 'dont know'\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?home maker\
+Enter the hourly wage you wish to earn:0\
+How much money do you need for retirement?dont know\
+Oops!  That was no valid number.  Try again by enter an integer or float...\
+Traceback (most recent call last):\
+  File "/Users/akilashankar/Documents/Homework_1.1.py", line 31, in <module>\
+    working_years = retirement_savings / annual_savings\
+NameError: name 'retirement_savings' is not defined\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?gardener\
+Enter the hourly wage you wish to earn:0\
+How much money do you need for retirement?dont know\
+Oops!  That was no valid number.  Try again by enter an integer or float...\
+How much money do you need for retirement?1000000\
+How much money do you need for retirement?\
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?baker\
+Enter the hourly wage you wish to earn:0\
+How much money do you need for retirement?10000000\
+Traceback (most recent call last):\
+  File "/Users/akilashankar/Documents/Homework_1.1.py", line 33, in <module>\
+    working_years = retirement_savings / annual_savings\
+ZeroDivisionError: float division by zero\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?couch potato\
+Enter the hourly wage you wish to earn:0\
+How much money do you need for retirement?3400000\
+Traceback (most recent call last):\
+  File "/Users/akilashankar/Documents/Homework_1.1.py", line 40, in <module>\
+    working_years = retirement_savings / annual_savings\
+ZeroDivisionError: float division by zero\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?movie watcher\
+Enter the hourly wage you wish to earn:0\
+How much money do you need for retirement?200000000\
+Hope you entered 0 wage by mistake. If not ...\
+Sorry to hear your services are not being paid. You have to look for a job to save up for retirement :( \
+>>> 46.2%2\
+0.20000000000000284\
+>>> int(46.2)\
+46\
+>>> int(46.3) % 2\
+0\
+>>> int(41.3) % 2\
+1\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?chaishopowner\
+Enter the hourly wage you wish to earn:100\
+How much money do you need for retirement?1000000\
+Assuming you are able to save 50% of your annual wage,  208000.0\
+You need to work for,  9.615384615384615  years\
+Traceback (most recent call last):\
+  File "/Users/akilashankar/Documents/Homework_1.1.py", line 38, in <module>\
+    if int(working_year) % 2 == 0:\
+NameError: name 'working_year' is not defined\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?sdfsdfs\
+Enter the hourly wage you wish to earn:45\
+How much money do you need for retirement?456789\
+Assuming you are able to save 50% of your annual wage,  93600.0\
+You need to work for,  9.760448717948718  years\
+Traceback (most recent call last):\
+  File "/Users/akilashankar/Documents/Homework_1.1.py", line 38, in <module>\
+    if (int(working_year) % 2 == 0):\
+NameError: name 'working_year' is not defined\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?gtertert\
+Enter the hourly wage you wish to earn:45\
+How much money do you need for retirement?234234234\
+Assuming you are able to save 50% of your annual wage,  93600.0\
+You need to work for,  5005.005  years\
+You need to save odd number of years\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?blacksmith\
+Enter the hourly wage you wish to earn:50.35\
+How much money do you need for retirement?3000000\
+Assuming you are able to save 50% of your annual wage,  104728.0\
+You need to work for,  57.29126881063326  years\
+You need to save odd number of years\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?blacksmith\
+Enter the hourly wage you wish to earn:50.35\
+How much money do you need for retirement?3 million\
+Oops!  That was not a valid number.  Try again by entering an integer or float...\
+How much money do you need for retirement?0\
+Assuming you are able to save 50% of your annual wage,  104728.0\
+You need to work for,  0.0  years\
+You need to save even number of years\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?23\
+Enter the hourly wage you wish to earn:fifty\
+Traceback (most recent call last):\
+  File "/Users/akilashankar/Documents/Homework_1.1.py", line 17, in <module>\
+    hourly_wage = float(input("Enter the hourly wage you wish to earn:"))\
+ValueError: could not convert string to float: 'fifty'\
+\
+During handling of the above exception, another exception occurred:\
+\
+Traceback (most recent call last):\
+  File "/Users/akilashankar/Documents/Homework_1.1.py", line 19, in <module>\
+    except 0:\
+TypeError: catching classes that do not inherit from BaseException is not allowed\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?23\
+Enter the hourly wage you wish to earn:232f\
+Oops!  That was not a valid number.  Try again by entering an integer or float...\
+Enter the hourly wage you wish to earn:dsf\
+Oops!  That was not a valid number.  Try again by entering an integer or float...\
+Enter the hourly wage you wish to earn:45\
+How much money do you need for retirement?45454545454545\
+Assuming you are able to save 50% of your annual wage,  93600.0\
+You need to work for,  971250971.2509615  years\
+You need to save odd number of years\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?erte5\
+Enter the hourly wage you wish to earn:200\
+How much money do you need for retirement?f43\
+Oops!  That was not a valid number.  Try again by entering an integer or float...\
+How much money do you need for retirement?435\
+Assuming you are able to save 50% of your annual wage,  416000.0\
+You need to work for,  0.0020913461538461537  years\
+You need to save even number of years\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?baker\
+Enter the hourly wage you wish to earn:fifty dollars\
+Oops!  That was not a valid number.  Try again by entering an integer or float...\
+Enter the hourly wage you wish to earn:50\
+How much money do you need for retirement?2 mil\
+Oops!  That was not a valid number.  Try again by entering an integer or float...\
+How much money do you need for retirement?2000000\
+Assuming you are able to save 50% of your annual wage,  104000.0\
+You need to work for,  38.46153846153846  years\
+If hourly wage is  50.0 You need to save even number of years\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?erwrew\
+Enter the hourly wage you wish to earn:23\
+How much money do you need for retirement?0\
+Assuming you are able to save 50% of your annual wage,  47840.0\
+You need to work for,  0.0  years\
+If hourly wage is  23.0 You need to save even number of years\
+>>> \
+=========== RESTART: /Users/akilashankar/Documents/Homework_1.1.py ===========\
+What is your dream job?4343\
+Enter the hourly wage you wish to earn:0\
+How much money do you need for retirement?0\
+Hope you entered 0 wage by mistake. If not ...\
+Sorry to hear your services are not being paid. You have to look for a job to save up for retirement :( \
+>>> }
